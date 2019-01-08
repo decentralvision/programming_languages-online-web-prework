@@ -1,7 +1,8 @@
 def reformat_languages(languages)
   output = {}
   languages.each do |style, language|
-    output[language] = {}
+    output[language] = {:style => style}
+
   end
 end
 
@@ -34,7 +35,7 @@ end
 #       :javascript => {
 #         :type => "interpreted"
 #       }
-#    
+#
 #     }
 #   }
 # }
