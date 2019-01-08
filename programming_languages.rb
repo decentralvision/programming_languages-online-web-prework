@@ -16,10 +16,8 @@ def reformat_languages(languages)
       else
         output[language] = {}
       end
-
     end
   end
-
   output
 end
 
