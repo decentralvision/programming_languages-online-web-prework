@@ -5,7 +5,6 @@ def reformat_languages(languages)
   languages.each do |style, languages_hsh|
     languages_hsh.each do |language, type_hsh|
       output[language] = {}
-      binding.pry
       if output[language].has_key?(:style)
         output[language][:style].push(style)
       else
