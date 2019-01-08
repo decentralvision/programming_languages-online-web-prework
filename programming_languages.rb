@@ -13,6 +13,7 @@ def reformat_languages(languages)
         type_hsh.each do |type_key, type|
           output[language][:type] = type
         end
+        binding.pry
       else
         output[language] = {}
       end
