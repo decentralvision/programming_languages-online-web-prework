@@ -2,7 +2,6 @@ require 'pry'
 
 def reformat_languages(languages)
   output = {}
-
   languages.each do |style, languages_hsh|
     languages_hsh.each do |language, type_hsh|
       output[language] = {}
@@ -12,7 +11,6 @@ def reformat_languages(languages)
       end
     end
   end
-  binding.pry
   output
 end
 
