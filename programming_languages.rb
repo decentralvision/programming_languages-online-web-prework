@@ -5,8 +5,8 @@ def reformat_languages(languages)
   languages.each do |style, languages_hsh|
     languages_hsh.each do |language, type_hsh|
       output[language] = {}
-      output[language][:style]
-      if output[language][:style].has_value?
+
+      if output[language].has_key?(:style)
         output[language][:style].push(style)
       else
         output[language][:style] = [style]
