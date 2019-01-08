@@ -4,7 +4,7 @@ def reformat_languages(languages)
   output = {}
   languages.each do |style, languages_hsh|
     languages_hsh.each do |language, type_hsh|
-      if output[language][:style] != []
+      if output[language][:style].empty?
         output[language][:style].push(style)
       else
         output[language][:style] = [style]
