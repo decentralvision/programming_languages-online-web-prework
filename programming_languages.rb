@@ -9,6 +9,7 @@ def reformat_languages(languages)
         output[language][:style].push(style)
       else
         output[language][:style] = [style]
+      end
       type_hsh.each do |type_key, type|
         output[language][:type] = type
       end
