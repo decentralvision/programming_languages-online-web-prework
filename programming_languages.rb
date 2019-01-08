@@ -8,6 +8,7 @@ def reformat_languages(languages)
       end
     end
   end
+  output
 end
 
 # let(:languages_by_style) {
