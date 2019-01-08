@@ -3,7 +3,10 @@ def reformat_languages(languages)
   languages.each do |style, languages_hsh|
     languages_hsh.each do |language, type_hsh|
       if output[language][:style] != []
-      output[language][:style].push(style)
+        output[language][:style].push(style)
+      else
+        output[language][:style] = [style]
+      end
       type_hsh.each do |type_key, type|
         output[language][:type] = type
       end
