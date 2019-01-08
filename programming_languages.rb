@@ -1,8 +1,10 @@
 def reformat_languages(languages)
   output = {}
   languages.each do |style, languages_hsh|
-    lan
-
+    languages_hsh.each do |language, type_hsh|
+    output[language] = {:style => style}
+      type.each
+    end
   end
 end
 
