@@ -4,7 +4,7 @@ def reformat_languages(languages)
     languages_hsh.each do |language, type_hsh|
     output[language] = {:style => style}
       type_hsh.each do |type_key, type|
-        output[language][type_key] = value
+        output[language][:type] = type
       end
     end
   end
