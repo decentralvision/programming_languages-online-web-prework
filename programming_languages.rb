@@ -1,6 +1,5 @@
 def reformat_languages(languages)
   output = {}
-  styles[]
   languages.each do |style, languages_hsh|
     languages_hsh.each do |language, type_hsh|
 
