@@ -11,6 +11,7 @@ def reformat_languages(languages)
         output[language][:type] = type
       end
     end
+    output[language][:style] = styles
   end
   binding.pry
   output
