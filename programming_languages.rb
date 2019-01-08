@@ -2,9 +2,10 @@ def reformat_languages(languages)
   output = {}
   languages.each do |style, languages_hsh|
     languages_hsh.each do |language, type_hsh|
+      if output[language][:style] != []
       output[language][:style].push(style)
       type_hsh.each do |type_key, type|
-      output[language][:type] = type
+        output[language][:type] = type
       end
     end
   end
